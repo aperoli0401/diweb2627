@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alejandro Peralta | Interfaces Web & DAW</title>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Google Fonts Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVEGACIÓN -->
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="brand-logo">
+        Alejandro Peralta <span class="brand-badge">DAW</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+          <li><a href="#actividades" class="nav-link">Actividades</a></li>
+          <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
+          <li><a href="temas.html" class="nav-link">Temario & PDFs</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    
+    <!-- SECCIÓN INICIO / HERO -->
+    <section id="inicio" class="hero-section">
+      <div class="status-pill">
+        <span class="status-dot"></span>
+        <span>Curso Académico • Desarrollo de Aplicaciones Web</span>
+      </div>
+
+      <h1 class="hero-title">
+        Alejandro Peralta <br>
+        <span class="highlight">Diseño de Interfaces Web</span>
+      </h1>
+
+      <p class="hero-description">
+        Bienvenido a mi espacio académico y portfolio de la asignatura de Diseño de Interfaces Web. En esta plataforma centralizada se recopilan todas las actividades prácticas, recursos del curso ordenados por temas y el seguimiento punto por punto de los avances del proyecto final.
+      </p>
+    </section>
+
+    <!-- SECCIÓN ACTIVIDADES / TEMAS EN GRID DE 2 COLUMNAS -->
+    <section id="actividades">
+      <div class="section-header">
+        <h2 class="section-title">01. Actividades por Temas </h2>
+        <span style="font-size: 0.8rem; color: var(--text-muted);">Selecciona un tema para ver recursos</span>
+      </div>
+
+      <div class="grid-2col">
+        <!-- Tema 1 -->
+        <a href="temas.html?tema=1" class="topic-card">
+          <div class="topic-header">
+            <span class="topic-number">TEMA 01</span>
+            <span class="topic-arrow">↗</span>
+          </div>
+          <div>
+            <h3 class="topic-title">Introducción al diseño de interfaces web</h3>
+            <p class="topic-desc">Planificar, diseñar y estructurar interfaces web aplicando guías de estilo, patrones y gestores de contenido.</p>
+          </div>
+        </a>
+
+        <!-- Tema 2 -->
+        <a href="temas.html?tema=2" class="topic-card">
+          <div class="topic-header">
+            <span class="topic-number">TEMA 02</span>
+            <span class="topic-arrow">↗</span>
+          </div>
+          <div>
+            <h3 class="topic-title">Elementos de una interfaz web</h3>
+            <p class="topic-desc">Planificar y diseñar interfaces web aplicando guías de estilo, patrones y gestores de contenido.</p>
+          </div>
+        </a>
+
+        <!-- Tema 3 -->
+        <a href="temas.html?tema=3" class="topic-card">
+          <div class="topic-header">
+            <span class="topic-number">TEMA 03</span>
+            <span class="topic-arrow">↗</span>
+          </div>
+          <div>
+            <h3 class="topic-title">Prototipado</h3>
+            <p class="topic-desc">Planificar el diseño web, crear sitemaps y elaborar prototipos.</p>
+          </div>
+        </a>
+
+        <!-- Tema 4 -->
+        <a href="temas.html?tema=4" class="topic-card">
+          <div class="topic-header">
+            <span class="topic-number">TEMA 04</span>
+            <span class="topic-arrow">↗</span>
+          </div>
+          <div>
+            <h3 class="topic-title">Guías de estilos</h3>
+            <p class="topic-desc">Crear guías de estilo, paletas accesibles, escalas tipográficas y sistemas visuales en Figma.</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECCIÓN PROYECTOS EN FILAS RECTANGULARES COMPLETAS -->
+    <section id="proyectos">
+      <div class="section-header">
+        <h2 class="section-title">02. Avances del Proyecto </h2>
+        <span style="font-size: 0.8rem; color: var(--text-muted);">Haz clic en la fila para ver detalles</span>
+      </div>
+
+      <div class="projects-rows">
+        <div class="projects-rows">
+  <!-- Fila Proyecto 1 -->
+  <a href="proyecto.html?hito=1" class="project-row">
+    <div class="project-meta">• TEMA 1</div>
+    <div class="project-body">
+      <h3 class="project-row-title">Planificación y Elementos de la Interfaz Web</h3>
+      <p class="project-row-desc">Análisis de elementos visuales, impacto en el usuario y selección de gestores de contenido (CMS) para el proyecto.</p>
+      <div class="project-tags">
+        <span class="tag">Planificación</span>
+        <span class="tag">CMS</span>
+        <span class="tag">Patrones UI</span>
+      </div>
+    </div>
+    <span class="topic-arrow">↗</span>
+  </a>
+
+  <!-- Fila Proyecto 2 -->
+  <a href="proyecto.html?hito=2" class="project-row">
+    <div class="project-meta">• TEMA 2</div>
+    <div class="project-body">
+      <h3 class="project-row-title">Maquetación Layout Base y Estructura Visual</h3>
+      <p class="project-row-desc">Aplicación de patrones de diseño, maquetación adaptable con Flexbox/Grid y estructura de interfaces estáticas.</p>
+      <div class="project-tags">
+        <span class="tag">HTML5</span>
+        <span class="tag">CSS Grid</span>
+        <span class="tag">Flexbox</span>
+      </div>
+    </div>
+    <span class="topic-arrow">↗</span>
+  </a>
+
+  <!-- Fila Proyecto 3 -->
+  <a href="proyecto.html?hito=3" class="project-row">
+    <div class="project-meta">• TEMA 3</div>
+    <div class="project-body">
+      <h3 class="project-row-title">Arquitectura de Información, Sitemaps y Prototipado</h3>
+      <p class="project-row-desc">Elaboración de mapas del sitio (sitemaps) y prototipado estructural para validar la navegación y accesibilidad.</p>
+      <div class="project-tags">
+        <span class="tag">Sitemap</span>
+        <span class="tag">Prototipado</span>
+        <span class="tag">Navegación</span>
+      </div>
+    </div>
+    <span class="topic-arrow">↗</span>
+  </a>
+
+  <!-- Fila Proyecto 4 -->
+  <a href="proyecto.html?hito=4" class="project-row">
+    <div class="project-meta">• TEMA 4</div>
+    <div class="project-body">
+      <h3 class="project-row-title">Guías de Estilo, Accesibilidad WCAG y Figma</h3>
+      <p class="project-row-desc">Definición de paletas cromáticas accesibles (WCAG 2.1), escalas tipográficas y documentación del sistema visual en Figma.</p>
+      <div class="project-tags">
+        <span class="tag">Guía de Estilo</span>
+        <span class="tag">WCAG 2.1</span>
+        <span class="tag">Figma</span>
+      </div>
+    </div>
+    <span class="topic-arrow">↗</span>
+  </a>
+</div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Alejandro Peralta • Portfolio de Interfaces Web</p>
+      <p>Alojado en GitHub Pages</p>
+    </div>
+  </footer>
+
+</body>
+</html>

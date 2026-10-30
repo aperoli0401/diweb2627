@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temas y Recursos | Alejandro Peralta</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-content">
+      <a href="index.html" class="brand-logo">
+        Alejandro Peralta <span class="brand-badge">Temario</span>
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="nav-link">← Volver al Inicio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container" style="padding-top: 3rem; padding-bottom: 4rem;">
+    
+    <div style="margin-bottom: 2rem;">
+      <h1 class="hero-title" style="font-size: 2.2rem; margin-bottom: 0.5rem;">Actividades & Recursos en PDF</h1>
+      <p class="hero-description">Consulta los documentos, enunciados de actividades y material teórico del curso.</p>
+    </div>
+
+    <!-- EXPLICACIÓN CÓMO SUBIR Y VISUALIZAR PDF EN GITHUB PAGES -->
+    <div class="info-box">
+      <h4>📌 ¿Cómo subir y enlazar tus propios PDF a GitHub Pages?</h4>
+      <p style="margin-bottom: 0.5rem;">Para que los documentos PDF se muestren directamente dentro de la aplicación, sigue estos pasos en tu repositorio:</p>
+      <ol style="margin-left: 1.25rem; line-height: 1.8;">
+        <li>Crea una carpeta llamada <code>pdf</code> en la raíz de tu proyecto en GitHub.</li>
+        <li>Guarda allí tus archivos con nombres simples, por ejemplo: <code>actividad-tema1.pdf</code>.</li>
+        <li>Enlázalos en la etiqueta <code>&lt;iframe src="pdf/tu-archivo.pdf"&gt;</code> como ves en el visor de abajo.</li>
+      </ol>
+    </div>
+
+    <!-- SELECCIÓN DE TEMAS EN BOTONES -->
+    <div class="section-header">
+      <h2 class="section-title">Visor de Documentos PDF</h2>
+    </div>
+
+    <!-- VISOR DE PDF INCORPORADO -->
+    <div class="pdf-viewer-container">
+      <!-- Fallback en iframe. Reemplazar "pdf/ejemplo.pdf" por la ruta real -->
+      <iframe src="pdf/tema1-actividades.pdf" title="Visor de PDF del Tema">
+        <p>Tu navegador no soporta la visualización directa de PDF. Puedes <a href="pdf/tema1-actividades.pdf">descargar el archivo PDF aquí</a>.</p>
+      </iframe>
+    </div>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 Alejandro Peralta</p>
+      <p>Interfaces Web • DAW</p>
+    </div>
+  </footer>
+
+</body>
+</html>
