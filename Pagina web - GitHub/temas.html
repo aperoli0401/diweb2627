@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Temas y Recursos | Alejandro Peralta</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Temario y Actividades | Alejandro Peralta</title>
+  <link rel="stylesheet" href="/Pagina web - GitHub/css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -22,35 +22,210 @@
     </div>
   </header>
 
-  <main class="container" style="padding-top: 3rem; padding-bottom: 4rem;">
+  <main class="container" style="flex: 1; padding-top: 2.5rem; padding-bottom: 4rem;">
     
-    <div style="margin-bottom: 2rem;">
-      <h1 class="hero-title" style="font-size: 2.2rem; margin-bottom: 0.5rem;">Actividades & Recursos en PDF</h1>
-      <p class="hero-description">Consulta los documentos, enunciados de actividades y material teórico del curso.</p>
+    <div class="hero-section" style="padding-top: 0; padding-bottom: 2rem;">
+      <h1 class="hero-title" style="font-size: 2.25rem;">Índice General de <span class="highlight">Temas y Actividades</span></h1>
+      <p class="hero-description">Despliega un tema para ver sus respectivas actividades prácticas en PDF.</p>
     </div>
 
-    <!-- EXPLICACIÓN CÓMO SUBIR Y VISUALIZAR PDF EN GITHUB PAGES -->
-    <div class="info-box">
-      <h4>📌 ¿Cómo subir y enlazar tus propios PDF a GitHub Pages?</h4>
-      <p style="margin-bottom: 0.5rem;">Para que los documentos PDF se muestren directamente dentro de la aplicación, sigue estos pasos en tu repositorio:</p>
-      <ol style="margin-left: 1.25rem; line-height: 1.8;">
-        <li>Crea una carpeta llamada <code>pdf</code> en la raíz de tu proyecto en GitHub.</li>
-        <li>Guarda allí tus archivos con nombres simples, por ejemplo: <code>actividad-tema1.pdf</code>.</li>
-        <li>Enlázalos en la etiqueta <code>&lt;iframe src="pdf/tu-archivo.pdf"&gt;</code> como ves en el visor de abajo.</li>
-      </ol>
-    </div>
-
-    <!-- SELECCIÓN DE TEMAS EN BOTONES -->
     <div class="section-header">
-      <h2 class="section-title">Visor de Documentos PDF</h2>
+      <span class="section-title">Bloques del Curso</span>
+      <span class="section-subtitle">Vista Interactiva</span>
     </div>
 
-    <!-- VISOR DE PDF INCORPORADO -->
-    <div class="pdf-viewer-container">
-      <!-- Fallback en iframe. Reemplazar "pdf/ejemplo.pdf" por la ruta real -->
-      <iframe src="pdf/tema1-actividades.pdf" title="Visor de PDF del Tema">
-        <p>Tu navegador no soporta la visualización directa de PDF. Puedes <a href="pdf/tema1-actividades.pdf">descargar el archivo PDF aquí</a>.</p>
-      </iframe>
+    <div class="topics-list">
+
+      <!-- Tema 1 -->
+      <details class="topic-card" open>
+        <summary class="topic-summary">Tema 1: Introducción al diseño de interfaces web</summary>
+        <div class="topic-body">
+          <p class="topic-description">Contenidos generales y prácticas del Tema 1.</p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;">
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 1.1 - Línea del tiempo</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="/pdf/tema 1/actividad 1- tema 1.pdf" title="Teoría Tema 1" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 1.1: Práctica inicial</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema1-actividad1.pdf" title="Actividad 1.1" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 1.2: Práctica intermedia</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema1-actividad2.pdf" title="Actividad 1.2" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 1.3: Práctica avanzada</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema1-actividad3.pdf" title="Actividad 1.3" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 1.4: Taller práctico</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema1-actividad4.pdf" title="Actividad 1.4" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 1.5: Caso de estudio</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema1-actividad5.pdf" title="Actividad 1.5" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 1.6: Proyecto evaluable</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema1-actividad6.pdf" title="Actividad 1.6" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+          </div>
+        </div>
+      </details>
+
+      <!-- Tema 2 -->
+      <details class="topic-card">
+        <summary class="topic-summary">Tema 2: Título del Tema</summary>
+        <div class="topic-body">
+          <p class="topic-description">Contenidos generales y prácticas del Tema 2.</p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;">
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Apuntes y Documentación Teórica</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema2-teoria.pdf" title="Teoría Tema 2" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 2.1: Práctica inicial</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema2-actividad1.pdf" title="Actividad 2.1" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 2.2: Práctica intermedia</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema2-actividad2.pdf" title="Actividad 2.2" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 2.3: Práctica avanzada</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema2-actividad3.pdf" title="Actividad 2.3" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 2.4: Taller práctico</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema2-actividad4.pdf" title="Actividad 2.4" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 2.5: Caso de estudio</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema2-actividad5.pdf" title="Actividad 2.5" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 2.6: Proyecto evaluable</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema2-actividad6.pdf" title="Actividad 2.6" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+          </div>
+        </div>
+      </details>
+
+      <!-- Tema 3 -->
+      <details class="topic-card">
+        <summary class="topic-summary">Tema 3: Título del Tema</summary>
+        <div class="topic-body">
+          <p class="topic-description">Contenidos generales y prácticas del Tema 3.</p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;">
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Apuntes y Documentación Teórica</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema3-teoria.pdf" title="Teoría Tema 3" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 3.1: Práctica inicial</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema3-actividad1.pdf" title="Actividad 3.1" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 3.2: Práctica intermedia</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema3-actividad2.pdf" title="Actividad 3.2" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 3.3: Práctica avanzada</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema3-actividad3.pdf" title="Actividad 3.3" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 3.4: Taller práctico</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema3-actividad4.pdf" title="Actividad 3.4" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 3.5: Caso de estudio</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema3-actividad5.pdf" title="Actividad 3.5" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 3.6: Proyecto evaluable</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema3-actividad6.pdf" title="Actividad 3.6" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+          </div>
+        </div>
+      </details>
+
+      <!-- Tema 4 -->
+      <details class="topic-card">
+        <summary class="topic-summary">Tema 4: Título del Tema</summary>
+        <div class="topic-body">
+          <p class="topic-description">Contenidos generales y prácticas del Tema 4.</p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;">
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Apuntes y Documentación Teórica</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema4-teoria.pdf" title="Teoría Tema 4" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 4.1: Práctica inicial</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema4-actividad1.pdf" title="Actividad 4.1" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 4.2: Práctica intermedia</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema4-actividad2.pdf" title="Actividad 4.2" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 4.3: Práctica avanzada</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema4-actividad3.pdf" title="Actividad 4.3" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 4.4: Taller práctico</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema4-actividad4.pdf" title="Actividad 4.4" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 4.5: Caso de estudio</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema4-actividad5.pdf" title="Actividad 4.5" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 4.6: Proyecto evaluable</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema4-actividad6.pdf" title="Actividad 4.6" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+          </div>
+        </div>
+      </details>
+
+      <!-- Tema 5 -->
+      <details class="topic-card">
+        <summary class="topic-summary">Tema 5: Título del Tema</summary>
+        <div class="topic-body">
+          <p class="topic-description">Contenidos generales y prácticas del Tema 5.</p>
+          <div style="display: flex; flex-direction: column; gap: 0.75rem; margin-top: 1rem;">
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Apuntes y Documentación Teórica</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema5-teoria.pdf" title="Teoría Tema 5" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 5.1: Práctica inicial</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema5-actividad1.pdf" title="Actividad 5.1" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 5.2: Práctica intermedia</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema5-actividad2.pdf" title="Actividad 5.2" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 5.3: Práctica avanzada</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema5-actividad3.pdf" title="Actividad 5.3" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 5.4: Taller práctico</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema5-actividad4.pdf" title="Actividad 5.4" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 5.5: Caso de estudio</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema5-actividad5.pdf" title="Actividad 5.5" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+            <details class="topic-card" style="background-color: var(--bg-primary);">
+              <summary class="topic-summary" style="font-size: 0.95rem;">Actividad 5.6: Proyecto evaluable</summary>
+              <div class="topic-body"><div class="pdf-viewer-container"><iframe src="pdf/tema5-actividad6.pdf" title="Actividad 5.6" loading="lazy"><p>Tu navegador no soporta la visualización de PDF.</p></iframe></div></div>
+            </details>
+          </div>
+        </div>
+      </details>
+
     </div>
 
   </main>
