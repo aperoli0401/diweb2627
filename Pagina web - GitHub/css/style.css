@@ -37,6 +37,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
@@ -72,6 +76,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .brand-logo {
@@ -101,6 +106,7 @@ body {
   align-items: center;
   gap: 1.25rem;
   list-style: none;
+  flex-wrap: wrap;
 }
 
 .nav-link {
@@ -111,11 +117,12 @@ body {
   transition: color var(--transition-fast);
 }
 
-.nav-link:hover, .nav-link.active {
+.nav-link:hover,
+.nav-link.active {
   color: var(--text-primary);
 }
 
-/* Hero / Inicio Section */
+/* Hero Section */
 .hero-section {
   padding: 4rem 0 3rem 0;
   display: flex;
@@ -152,6 +159,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .section-title {
@@ -173,6 +181,14 @@ body {
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-bottom: 3.5rem;
+}
+
+a.topic-card {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
 }
 
 .topic-header {
@@ -283,7 +299,29 @@ body {
   border-radius: 4px;
 }
 
-/* Acordeón Desplegable de Temas */
+/* Acordeón Desplegable de Temas y Actividades */
+.topics-main {
+  flex: 1;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+}
+
+.topics-hero {
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+
+.topics-hero-title {
+  font-size: 2.25rem;
+}
+
+.activities-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
 .topics-list {
   display: flex;
   flex-direction: column;
@@ -296,7 +334,7 @@ body {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-md);
   padding: 1.25rem 1.5rem;
-  transition: all var(--transition-normal);
+  transition: background-color var(--transition-normal), border-color var(--transition-normal), box-shadow var(--transition-normal);
 }
 
 .topic-card:hover {
@@ -311,6 +349,19 @@ body {
   box-shadow: var(--shadow-card);
 }
 
+/* Ajuste para las tarjetas de actividad anidadas */
+.topic-body .topic-card {
+  background-color: var(--bg-primary);
+  padding: 0.9rem 1.15rem;
+  border-radius: var(--radius-sm);
+  box-shadow: none;
+}
+
+.topic-body .topic-card:hover,
+.topic-body .topic-card[open] {
+  background-color: var(--bg-card);
+}
+
 .topic-summary {
   cursor: pointer;
   font-weight: 600;
@@ -321,6 +372,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.topic-body .topic-card > .topic-summary {
+  font-size: 0.95rem;
 }
 
 .topic-summary::-webkit-details-marker {
@@ -332,9 +388,10 @@ body {
   font-size: 0.75rem;
   color: var(--accent);
   transition: transform var(--transition-fast);
+  flex-shrink: 0;
 }
 
-.topic-card[open] .topic-summary::after {
+.topic-card[open] > .topic-summary::after {
   transform: rotate(180deg);
 }
 
@@ -345,6 +402,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+}
+
+.topic-body .topic-card[open] > .topic-body {
+  margin-top: 0.9rem;
+  padding-top: 0.9rem;
 }
 
 .topic-description {
@@ -382,6 +444,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
 }
 
 /* Responsive Rules */
@@ -395,7 +458,8 @@ body {
     gap: 0.75rem;
   }
 
-  .hero-title {
+  .hero-title,
+  .topics-hero-title {
     font-size: 2rem;
   }
 
